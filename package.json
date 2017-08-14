@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "start": "node ./app/bin/www",
-    "debug": "nodemon --debug=56745 ./app/bin/www"
+    "debug": "nodemon --inspect=5858 ./app/bin/www"
   },
   "dependencies": {
     "forever": "^0.15.2",

@@ -9,8 +9,9 @@ services:
     environment:
       NODE_ENV: "development"
     volumes:
-      - "./app:/home/deb/app"
+      - ".:/home/deb"
+      - "/home/deb/node_modules"
     ports:
       - "3100:3000"
-      - "56745:56745"
-    entrypoint: ["npm", "run", "debug"]    
+      - "5858:5858"
+    entrypoint: ["npm", "run", "debug"]
